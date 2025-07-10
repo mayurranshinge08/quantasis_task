@@ -17,9 +17,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: light ? Colors.green : Colors.grey,
+      backgroundColor: light ? Colors.green : Colors.black,
       appBar: AppBar(
-        backgroundColor: light ? Colors.green : Colors.grey,
+        backgroundColor: light ? Colors.green : Colors.black,
         actions: [
           Switch(
             value: light,
@@ -45,7 +45,11 @@ class _HomePageState extends State<HomePage> {
             child: PageView(
               controller: _controller,
               scrollDirection: Axis.horizontal,
-              children: [Page1(), Page2(), Page3()],
+              children: [
+                Page1(light: light),
+                Page2(light: light),
+                Page3(light: light),
+              ],
             ),
           ),
           Padding(
@@ -56,8 +60,8 @@ class _HomePageState extends State<HomePage> {
               effect: WormEffect(
                 dotHeight: 12,
                 dotWidth: 12,
-                activeDotColor: Colors.deepPurple,
-                dotColor: Colors.red,
+                activeDotColor: light ? Colors.white : Colors.green,
+                dotColor: light ? Colors.black : Colors.white,
               ),
             ),
           ),
@@ -66,12 +70,12 @@ class _HomePageState extends State<HomePage> {
             child: ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.orange,
+                backgroundColor: light ? Colors.orange : Colors.white,
                 minimumSize: Size(200, 60), // width: 200, height: 60
                 padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                 textStyle: TextStyle(fontSize: 20), // increase text size
               ),
-              child: Text("Get Started", style: TextStyle(color: Colors.white)),
+              child: Text("Get Started", style: TextStyle(color: Colors.black)),
             ),
           ),
         ],
