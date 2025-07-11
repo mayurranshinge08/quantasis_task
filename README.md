@@ -2,6 +2,8 @@
 
 A new Flutter project.
  ![Image Alt](https://github.com/mayurranshinge08/quantasis_task/blob/4f6228a6d69e4afafd357fca54a1c0aac0b70fc5/lightMode.png)
+ ![Image Alt](https://github.com/mayurranshinge08/quantasis_task/blob/c6dfad98a0c9e3e35ff62f4827f230a075c61ed8/darkMode.png)
+ 
 
 ## Getting Started
 
