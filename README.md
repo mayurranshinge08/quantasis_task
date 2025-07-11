@@ -1,7 +1,7 @@
 # quantasis_task
 
 A new Flutter project.
- ![Image Alt]()
+ ![Image Alt](https://github.com/mayurranshinge08/quantasis_task/blob/4f6228a6d69e4afafd357fca54a1c0aac0b70fc5/lightMode.png)
 
 ## Getting Started
 
